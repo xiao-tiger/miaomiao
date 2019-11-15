@@ -4,9 +4,11 @@ import App from './App.vue'
 // './router' 就会把 ./router/index.js 导入
 import router from './router'
 import store from './store'
+import axios from 'axios'
 import './registerServiceWorker'
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
 
 new Vue({
   router,
