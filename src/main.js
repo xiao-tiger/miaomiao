@@ -10,6 +10,11 @@ import './registerServiceWorker'
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 
+Vue.filter('setWH', (url, arg) => {
+  // 将url中的 w.h 替换为 arg arg为宽高
+  return url.replace(/w\.h/, arg)
+})
+
 new Vue({
   router,
   store,

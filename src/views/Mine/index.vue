@@ -19,17 +19,6 @@ export default {
     TarBar,
     Login
   },
-  created () {
-    console.log('我是喵喵');
-    this.$axios.get('http://127.0.0.1:8000/car_info_base/')
-    .then(res => {
-      console.log(res);
-    })
-    .catch(err => {
-      console.log(err);
-      console.log('错了');
-    })
-  }
 }
 </script>
 
